@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raflahenksu – Ravintola-alan henkilöstöpalvelut ja konsultointi</title>
+  <title>Ravintola-alan henkilöstövuokraus ja keikkalaiset | Raflahenksu</title>
   <meta name="description" content="Raflahenksu välittää kokeneita ravintola-alan keikkalaisia baareihin, ruokaravintoloihin ja hotelleihin ympäri Suomen. Sesonkiapua, rekrytointia ja HORECA-konsultointia.">
   <meta name="theme-color" content="#14110F">
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <link rel="canonical" href="https://raflahenksu.fi/">
 
   <!-- Open Graph -->
@@ -15,9 +15,19 @@
   <meta property="og:site_name" content="Raflahenksu">
   <meta property="og:title" content="Raflahenksu – Ravintola-alan henkilöstöpalvelut ja konsultointi">
   <meta property="og:description" content="Kokeneita ravintola-alan keikkalaisia ja sesonkiapua ympäri Suomen. Ota yhteyttä – rakennamme luotettavan tiimin juuri sinun tarpeeseesi.">
-  <meta property="og:url" content="https://botanisti.github.io/raflahenksu/">
-  <meta property="og:image" content="https://botanisti.github.io/raflahenksu/logo.png">
-  <meta property="og:image:alt" content="Raflahenksu-logo">
+  <meta property="og:url" content="https://raflahenksu.fi/">
+  <meta property="og:image" content="https://raflahenksu.fi/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Raflahenksu – ravintola-alan henkilöstövuokraus">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raflahenksu – ravintola-alan henkilöstövuokraus">
+  <meta name="twitter:description" content="Kokeneita ravintola-alan keikkalaisia ja sesonkiapua ympäri Suomen. Ota yhteyttä – rakennamme luotettavan tiimin juuri sinun tarpeeseesi.">
+  <meta name="twitter:image" content="https://raflahenksu.fi/og-image.jpg">
+  <meta name="twitter:image:alt" content="Raflahenksu – ravintola-alan henkilöstövuokraus">
 
   <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -35,15 +45,69 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EmploymentAgency",
-    "name": "Raflahenksu",
-    "description": "Ravintola-alan henkilöstöpalvelut ja konsultointi. Kokeneita keikkalaisia baareihin, ruokaravintoloihin ja hotelleihin ympäri Suomen.",
-    "url": "https://raflahenksu.fi/",
-    "logo": "https://raflahenksu.fi/logo.png",
-    "image": "https://raflahenksu.fi/logo.png",
-    "email": "susanna@raflahenksu.fi",
-    "areaServed": { "@type": "Country", "name": "Suomi" },
-    "knowsAbout": ["Ravintola-ala", "HORECA", "Henkilöstövuokraus", "Keikkatyö", "Rekrytointi", "Ravintolakonsultointi"]
+    "@graph": [
+      {
+        "@type": "EmploymentAgency",
+        "@id": "https://raflahenksu.fi/#organisaatio",
+        "name": "Raflahenksu",
+        "alternateName": "Rafla Henksu",
+        "description": "Ravintola-alan henkilöstöpalvelut ja konsultointi. Kokeneita keikkalaisia baareihin, ruokaravintoloihin ja hotelleihin ympäri Suomen.",
+        "url": "https://raflahenksu.fi/",
+        "logo": "https://raflahenksu.fi/logo.png",
+        "image": "https://raflahenksu.fi/og-image.jpg",
+        "email": "susanna@raflahenksu.fi",
+        "telephone": "+358503630887",
+        "founder": { "@type": "Person", "name": "Susanna", "jobTitle": "Perustaja & henkilöstöpäällikkö" },
+        "areaServed": { "@type": "Country", "name": "Suomi" },
+        "knowsAbout": ["Ravintola-ala", "HORECA", "Henkilöstövuokraus", "Keikkatyö", "Rekrytointi", "Ravintolakonsultointi"],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "name": "Susanna",
+            "email": "susanna@raflahenksu.fi",
+            "telephone": "+358503630887",
+            "availableLanguage": ["fi"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "recruitment",
+            "name": "Jasmiini",
+            "email": "jasmiini@raflahenksu.fi",
+            "availableLanguage": ["fi"]
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Ravintola-alan henkilöstöpalvelut",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yksittäiset keikkalaiset", "description": "Nopeaa apua yhteen vuoroon tai koko viikonloppuun, lyhyelläkin varoitusajalla." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sesonkiapu", "description": "Lisäkädet sesonkien ja viikonloppujen ruuhkahuippuihin." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vakituinen ja suora rekrytointi", "description": "Vakituisen tekijän haku sekä suora rekrytointi ravintola-alan tuntemuksella." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Konsultointi ja konseptit", "description": "Uuden ravintolakonseptin työstäminen, prosessien hiominen ja henkilöstön rakentaminen." } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://raflahenksu.fi/#sivusto",
+        "url": "https://raflahenksu.fi/",
+        "name": "Raflahenksu",
+        "inLanguage": "fi-FI",
+        "publisher": { "@id": "https://raflahenksu.fi/#organisaatio" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://raflahenksu.fi/#etusivu",
+        "url": "https://raflahenksu.fi/",
+        "name": "Ravintola-alan henkilöstövuokraus ja keikkalaiset | Raflahenksu",
+        "description": "Raflahenksu välittää kokeneita ravintola-alan keikkalaisia baareihin, ruokaravintoloihin ja hotelleihin ympäri Suomen.",
+        "inLanguage": "fi-FI",
+        "isPartOf": { "@id": "https://raflahenksu.fi/#sivusto" },
+        "about": { "@id": "https://raflahenksu.fi/#organisaatio" },
+        "primaryImageOfPage": "https://raflahenksu.fi/og-image.jpg"
+      }
+    ]
   }
   </script>
 </head>
@@ -79,7 +143,7 @@
     <section class="hero">
       <img class="hero-photo" src="img/hero-1600.webp"
            srcset="img/hero-900.webp 900w, img/hero-1600.webp 1600w" sizes="100vw"
-           alt="" width="1600" height="893" fetchpriority="high" decoding="async">
+           alt="Baarimikko valmistaa cocktailia ravintolan baaritiskillä" width="1600" height="893" fetchpriority="high" decoding="async">
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="wrap hero-inner">
         <p class="eyebrow reveal">Henkilöstöpalvelut &amp; konsultointi · HORECA · koko Suomi</p>
@@ -286,7 +350,7 @@
             <p class="eyebrow">Yhteydenotto</p>
             <h2>Otetaan yhteyttä</h2>
             <p>Kerro lyhyesti tilanteesi, niin vastaan sinulle henkilökohtaisesti. Lomake avaa sähköpostiohjelmasi valmiiksi täytetyllä viestillä – voit myös kirjoittaa suoraan osoitteeseen:</p>
-            <a class="contact-mail" href="mailto:susanna@raflahenksu.fi">susanna@raflahenksu.fi</a><br> <a href="tel:+358401234567">+358 50 3630 887</a> <br>
+            <a class="contact-mail" href="mailto:susanna@raflahenksu.fi">susanna@raflahenksu.fi</a><br> <a href="tel:+358503630887">+358 50 3630 887</a> <br>
             <a class="contact-mail" href="mailto:jasmiini@raflahenksu.fi">jasmiini@raflahenksu.fi</a>
           </div>
 
