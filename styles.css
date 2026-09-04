@@ -130,7 +130,7 @@ a:hover { color: var(--gold-deep); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 1rem; }
 
 .brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); }
-.brand-logo { width: auto; height: 52px; display: block; }
+.brand-logo { width: auto; height: 52px; display: block; flex: 0 0 auto; }
 .brand-text {
   font-family: var(--font-body); font-weight: 600; font-size: .9rem;
   color: var(--ink); line-height: 1.25; letter-spacing: .005em;
@@ -447,5 +447,6 @@ input[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: #b03a2
 }
 
 @media (max-width: 560px) {
-  .brand-text { display: none; }
+  /* teksti jää näkyviin myös mobiilissa, pienempänä ja tarvittaessa kahdelle riville */
+  .brand-text { font-size: .72rem; line-height: 1.25; }
 }
