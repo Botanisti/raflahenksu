@@ -277,7 +277,7 @@ a:hover { color: var(--gold-deep); }
   font-family: var(--font-display); font-weight: 700; margin: 0;
   font-size: clamp(1.6rem, 4.2vw, 2.6rem); line-height: 1.22; letter-spacing: -.012em; max-width: 24ch;
 }
-.band-text span { font-family: var(--font-script); font-weight: 400; color: var(--gold); letter-spacing: 0; }
+.band-text span { color: var(--gold); }
 
 /* ---------- Kokemus / about ---------- */
 .about { display: grid; grid-template-columns: 1fr; gap: 1.8rem; align-items: start; }
